@@ -38,6 +38,7 @@ def main():
     right.when_pressed = lambda x: move_right(player_pos)
 
     PURPLE = pygame.Color("purple")
+    GRAY = pygame.Color("darkgrey")
     
     while running:
         for event in pygame.event.get():
@@ -46,7 +47,7 @@ def main():
         
         screen.fill(PURPLE)
 
-        pygame.draw.circle(screen, "white", player_pos, 20)
+        pygame.draw.circle(screen, GRAY, player_pos, 20)
 
         pygame.display.flip()
 
