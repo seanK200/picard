@@ -47,7 +47,7 @@ def main():
         
         screen.fill(PURPLE)
 
-        pygame.draw.circle(screen, GRAY, player_pos, 20)
+        pygame.draw.circle(screen, (128, 128, 128), player_pos, 20)
 
         pygame.display.flip()
 
