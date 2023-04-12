@@ -25,7 +25,7 @@ def main():
     screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
     clock = pygame.time.Clock()
     running = True
-    player_pos = pygame.Vector2(screen.get_width() / 2, screen.get_height() / 2)
+    player_pos = pygame.Vector2(screen.get_width() // 2, screen.get_height() // 2)
 
     up = gpio.Button(KEY_1)
     down = gpio.Button(KEY_2)
