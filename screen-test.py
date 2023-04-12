@@ -36,13 +36,15 @@ def main():
     down.when_pressed = lambda x: move_down(player_pos)
     left.when_pressed = lambda x: move_left(player_pos)
     right.when_pressed = lambda x: move_right(player_pos)
+
+    PURPLE = pygame.Color("purple")
     
     while running:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
         
-        screen.fill("purple")
+        screen.fill(PURPLE)
 
         pygame.draw.circle(screen, "white", player_pos, 20)
 
