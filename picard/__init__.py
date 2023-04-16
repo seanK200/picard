@@ -1,7 +1,7 @@
 import pygame
 from typing import List
 from .const import *
-from .ui import Element, ImageElement
+from .ui import Element, ImageElement, UIElement
 
 class PiCard:
     def __init__(self, is_dev: bool, fps: int) -> None:
@@ -19,8 +19,11 @@ class PiCard:
         # square = Element(10, 20, 100, 50, background=(128, 34, 0))
         # self.all_elements.append(square)
 
-        frame = ImageElement(100, 100, src="assets/UI_Flat_Frame_01_Lite.png")
+        frame = ImageElement(10, 10, src="assets/UI_Flat_Frame_01_Lite.png")
         self.all_elements.append(frame)
+        
+        frame2 = UIElement(60, 10, 100, 80, src="assets/UI_Flat_Frame_01_Lite.png", scale_by=2, scale_boundary=(5, 4, 5, 4))
+        self.all_elements.append(frame2)
 
 
 
